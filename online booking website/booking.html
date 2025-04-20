@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link href="styles.css" rel="stylesheet" />
+    
+</head>
+<body>
+
+     <!-- Navigation-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container px-5">
+            <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">EZZ BEAUTY CENTER</span></a>
+            <a href="photos/logo.pdf"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Log In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- booking system-->
+
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0 "><span class="text-bg-secondary">Book an Appointment</span></h1>
+        </div>
+
+    <div class="wrapper bg-white">
+        <!--this kept the text center alligned with no boarders-->
+        <form action="#">
+
+            <!--drop down menu to choose the treatment from-->
+            <div class="form-group d-sm-flex margin">
+             <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">Acne Treatment</option>
+                <option value="2">Face Lifting</option>
+                <option value="3">Thai Massage</option>
+                <option value="4">Relaxation Session</option>
+                
+              </select>
+             </div>
+             
+             <!--input field for the date of the appointment-->
+             
+<!--The outer div uses 'form-group' and makes the layout flexible on small screens and up. 
+The inner div centers items, adds a bottom border, and stretches to fill the space. 
+The input is a date picker, required to fill in, and styled with 'form-control.-->
+
+            <div class="form-group d-sm-flex margin">
+                <div class="d-flex align-items-center flex-fill me-sm1 my-sm-0 border-bottom position-relative">
+                    <input type="date" required placeholder="Date of Appointment" class="form-control">
+                    <div class="label" id="Date"></div>
+                </div>
+
+            </div>
+       <!-- Name input
+        border bottom for line under the container - form control for coustimazable text input
+        data feedback for validation-->
+    <div class="form-floating mb-3 border-bottom position-relative">
+    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+    <label for="name">Full name</label>
+     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+   </div>
+
+           <!-- email adress input-->
+           <div class="form-floating mb-3 border-bottom position-relative">
+            <input class="form-control" id="email" type="Email Adress" placeholder="(123) 456-7890" data-sb-validations="required" />
+            <label for="email">Email Adress</label>
+            <div class="invalid-feedback" data-sb-feedback="email adress:required">An Email Adress is required.</div>
+        </div>
+
+
+           <!-- Phone number input-->
+  <div class="form-floating mb-3 border-bottom position-relative" >
+    <input class="form-control" id="number" type="Phone Number" placeholder="(123) 456-7890"/>
+    <label for="phone">Phone Number</label>
+    <div class="invalid-feedback" data-sb-feedback="number:required">A Phone Number is required.</div>
+</div>
+
+            <div class="form-group my-3 ">
+                <div class="btn btn-primary rounded-0 d-flex justify-content-center text-center p-3">Book The Appointment
+                </div>
+            </div>
+        </form>
+
+    </div>  
+
+<!-- Footer-->
+<footer class="bg-white py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto"><div class="small m-0">Duaa Beleid &copy;Coding 2025</div></div>
+            <div class="col-auto">
+                <a class="small" href="Services.html">Services</a>
+                <span class="mx-1">&middot;</span>
+                <a class="small" href="index.html">Home Page</a>
+                <span class="mx-1">&middot;</span>
+                <a class="small" href="about.html">About us</a>
+                <span class="mx-1">&middot;</span>
+                <a class="small" href="booking.html">Booking</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</body>
+</html>
