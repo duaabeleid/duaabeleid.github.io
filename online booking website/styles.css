@@ -10,6 +10,29 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Resetting */
+img{
+ width: 100%; 
+ max-width: 400px;
+ object-fit: cover;
+ vertical-align: middle;
+ border-radius: 6px;
+}
+
+.wrappers{
+padding: 0 15px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-around;
+gap: 1rem;
+}
+
+.intro{
+  flex: 1;
+  
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -7764,7 +7787,7 @@ textarea.form-control-lg {
 }
 
 .mt-1 {
-  margin-top: 0.25rem !important;
+  margin-top: 0.1rem !important;
 }
 
 .mt-2 {
