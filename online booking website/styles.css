@@ -10,6 +10,15 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* Resetting */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
 
 * {
   padding: 0;
