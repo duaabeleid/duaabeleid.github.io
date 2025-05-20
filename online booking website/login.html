@@ -43,75 +43,69 @@
             </div>
         </nav>
         <!-- Page content-->
+         
         <section class="py-5">
             <div class="container px-5">
                 <!-- Contact form-->
                 <div class="bg-light rounded-4 py-5 px-4 px-md-5">
                     <div class="text-center mb-5">
-                        <div></div>
                         <h1 class="fw-bolder text-cente text-bg-secondary">LOG IN</h1>
                         <p class="lead fw-normal text-bg-primary">Let's get your appointment booked</p>
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
-
-
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                    data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                    data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.
-                                </div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">A valid email address is
-                                    required.</div>
-                            </div>
-                            <!-- Password input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="password" type="password" placeholder="(123) 456-7890"
-                                    data-sb-validations="required" />
-                                <label for="phone">Password</label>
-                                <div class="invalid-feedback" data-sb-feedback="password:required">A password is
-                                    required.</div>
-                            </div>
-
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="booking.html">booking page</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage">
-                                <div class="text-center text-danger mb-3">Error sending message!</div>
-                            </div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary " class="nav-item"><a class="nav-link"
-                                        href="booking.html">Log In</a></button>
-                            </div>
- 
-                              <input type="checkbox" id="trigger" hidden>
                         
-                        
-
+                            <!-- ✅ Start of form -->
+                            <form action="booking.html" method="POST">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" name="name" type="text" placeholder="Enter your name..."
+                                        required />
+                                    <label for="name">Full name</label>
+                                </div>
+                                
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com"
+                                        required />
+                                    <label for="email">Email address</label>
+                                </div>
+        
+                                <!-- Password input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="password" name="password" type="password" placeholder="••••••"
+                                        required />
+                                    <label for="password">Password</label>
+                                </div>
+        
+                                <!-- Submit success message -->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Form submission successful!</div>
+                                        To activate this form, sign up at
+                                        <br />
+                                        <a href="booking.html">booking page</a>
+                                    </div>
+                                </div>
+        
+                                <!-- Submit error message -->
+                                <div class="d-none" id="submitErrorMessage">
+                                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                                </div>
+        
+                                <!-- Submit Button -->
+                                <div class="d-grid">
+                                    <button class="btn btn-primary text-bg-light px-4 py-2" type="submit">Log In</button>
+                                </div>
                             </form>
+                            <!-- ✅ End of form -->
+        
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
 
 
 

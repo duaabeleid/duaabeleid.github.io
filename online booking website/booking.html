@@ -33,120 +33,130 @@
 
 
 
- <!-- Booking Section - Full Width -->
+    <!-- Booking Section - Full Width -->
 
-<!-- container-fluid allows full width, px-5 adds horizontal padding -->
-<div class="container-fluid px-5 mb-5">
+    <!-- container-fluid allows full width, px-5 adds horizontal padding -->
+    <div class="container-fluid px-5 mb-5">
 
-    <!-- Title Section -->
-    <div class="text-center mb-5">
-        <h1 class="display-5 fw-bolder mb-0">
-            <span class="text-bg-secondary">Book an Appointment</span>
-        </h1>
+        <!-- Title Section -->
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0">
+                <span class="text-bg-secondary">Book an Appointment</span>
+            </h1>
+        </div>
+
+        <!-- Wrapper made full width by removing default max-width and padding in CSS -->
+        <!-- I added w-100 to stretch across full width and removed any restrictive margins -->
+        <div class="bg-white p-4 w-100">
+            <form action="#">
+
+                <!-- Treatment dropdown -->
+                <div class="form-group margin mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Acne Treatment</option>
+                        <option value="2">Face Lifting</option>
+                        <option value="3">Thai Massage</option>
+                        <option value="4">Relaxation Session</option>
+                    </select>
+                </div>
+
+                <!-- Date input -->
+                <div class="form-group margin mb-3">
+                    <div class="d-flex align-items-center flex-fill border-bottom position-relative">
+                        <input type="date" required placeholder="Date of Appointment" class="form-control border-0">
+                    </div>
+                </div>
+
+                   <!-- full name-->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
+                    <label for="name">Full name</label>
+                </div>
+                
+                   <!-- email adress -->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="email" type="email" placeholder="Email Address" required />
+                    <label for="email">Email Address</label>
+                </div>
+                
+                   <!-- phone numnber -->
+                <div class="form-floating mb-3">
+                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required />
+                    <label for="phone">Phone Number</label>
+                </div>
+                
+
+                
+
+                <!-- Submit button -->
+                <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Appointment Booked!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Your appointment is booked! Can't wait to see you.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle1"
+                                    data-bs-toggle="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                    aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#exampleModalToggle"
+                                    data-bs-toggle="modal">Back to first</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary  w-100 py-3" data-bs-target="#exampleModalToggle"
+                    data-bs-toggle="modal">Book Appointment</button>
+            </form>
+        </div>
     </div>
 
-    <!-- Wrapper made full width by removing default max-width and padding in CSS -->
-    <!-- I added w-100 to stretch across full width and removed any restrictive margins -->
-    <div class="bg-white p-4 w-100">
-        <form action="#">
 
-            <!-- Treatment dropdown -->
-            <div class="form-group margin mb-3">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Open this select menu</option>
-                    <option value="1">Acne Treatment</option>
-                    <option value="2">Face Lifting</option>
-                    <option value="3">Thai Massage</option>
-                    <option value="4">Relaxation Session</option>
-                </select>
-            </div>
-
-            <!-- Date input -->
-            <div class="form-group margin mb-3">
-                <div class="d-flex align-items-center flex-fill border-bottom position-relative">
-                    <input type="date" required placeholder="Date of Appointment" class="form-control border-0">
+    <!-- Footer-->
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Duaa Beleid &copy;Coding 2025</div>
+                </div>
+                <div class="col-auto">
+                    <a class="small" href="Services.html">Services</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="index.html">Home Page</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="about.html">About us</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="booking.html">Booking</a>
                 </div>
             </div>
-
-            <!-- Name input -->
-            <div class="form-floating mb-3 border-bottom position-relative">
-                <input class="form-control border-0" id="name" type="text" placeholder="Enter your name..." required />
-                <label for="name">Full name</label>
-            </div>
-
-            <!-- Email input -->
-            <div class="form-floating mb-3 border-bottom position-relative">
-                <input class="form-control border-0" id="email" type="email" placeholder="Email Address" required />
-                <label for="email">Email Address</label>
-            </div>
-
-            <!-- Phone number input -->
-            <div class="form-floating mb-3 border-bottom position-relative">
-                <input class="form-control border-0" id="number" type="tel" placeholder="Phone Number" required />
-                <label for="phone">Phone Number</label>
-            </div>
-
-            <!-- Submit button -->
-            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Appointment Booked!</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                 Your appointment is booked! Can't wait to see you.
-                    </div>
-                    <div class="modal-footer">
-                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle1" data-bs-toggle="modal">close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
-                <div class="modal-dialog modal-dialog-centered">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-...
-                    </div>
-                    <div class="modal-footer">
-                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="btn btn-primary  w-100 py-3" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Book Appointment</button>
-        </form>
-    </div>
-</div>
-
-
-        <!-- Footer-->
-        <footer class="bg-white py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto">
-                        <div class="small m-0">Duaa Beleid &copy;Coding 2025</div>
-                    </div>
-                    <div class="col-auto">
-                        <a class="small" href="Services.html">Services</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="index.html">Home Page</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="about.html">About us</a>
-                        <span class="mx-1">&middot;</span>
-                        <a class="small" href="booking.html">Booking</a>
-                    </div>
-                </div>
-            </div>
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-                crossorigin="anonymous"></script>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 
 </body>
 
